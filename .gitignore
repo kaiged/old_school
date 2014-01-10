@@ -11,7 +11,8 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
-
+# RubyMine IDE
+.idea/
 # YARD artifacts
 .yardoc
 _yardoc
