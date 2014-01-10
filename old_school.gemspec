@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors = ['kaiged']
   s.email = 'kaiged@gmail.com'
   s.files = ['lib/old_school.rb','lib/old_school/api/old_school_api.rb','lib/old_school/api/old_school_api_utils.rb']
-  s.homepage = 'https://github.com/ka  iged/old_school'
+  s.homepage = 'https://github.com/kaiged/old_school'
 
   s.add_dependency 'typhoeus'
   s.add_dependency 'json'
