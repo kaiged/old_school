@@ -58,7 +58,7 @@ module OldSchool
     #School Resource
     def get_students_by_school(school_id)
       num_students = get_students_count_by_school(school_id)
-      get_with_pagination_url ('student', num_students) {|page| "/ws/v1/school/#{school_id}/student?page=#{page}"}
+      get_with_pagination_url('student', num_students) {|page| "/ws/v1/school/#{school_id}/student?page=#{page}"}
     end
 
     def get_students_count_by_school(school_id)
