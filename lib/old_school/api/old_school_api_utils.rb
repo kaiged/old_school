@@ -1,3 +1,5 @@
+require 'typhoeus'
+
 module OldSchool
   module APIUtils
 
@@ -157,7 +159,7 @@ module OldSchool
       pages = num_items / page_size + 1
 
       items = []
-      pages.each do |page|
+      for page in 1..pages
         url = yield(page)
         items_from_page = hash_from_successful_response(get(url), ["#{resource}s",resource])
         if items_from_page.is_a? Array
