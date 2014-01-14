@@ -1,4 +1,5 @@
 require 'typhoeus'
+require 'json'
 
 module OldSchool
   module APIUtils
@@ -48,7 +49,7 @@ module OldSchool
         body = {}
         begin
           body = JSON.parse(response.body)
-        rescue
+        rescue JSON::ParserError
           raise ResponseError, "Could not parse body as JSON: #{response.body}"
         end
         

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'old_school'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.date = '2013-01-10'
   s.summary = 'Ruby Gem for a Powerful SIS'
   s.description = 'Provides an interface to work with a Powerful SIS REST API'
